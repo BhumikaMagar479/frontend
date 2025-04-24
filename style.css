@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2cfff4;
+    background-color:#c6def1;
     padding: 16px 20px;
   }
 
@@ -28,19 +28,19 @@ body {
   }
 
   .nav-links a:hover {
-    color: rgb(85, 36, 36);
+    color:#deb887;
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
   }
 
 
-  .fish{
+  .tshirt1{
     height: 300px;
     width: 200px;
     object-fit: cover;
   }
-  .fish{
+  .tshirt1{
     display: flex;
     height: 300px;
     width: 200px;
@@ -59,7 +59,7 @@ body {
 
   }
   .button{
-    background-color: #f527e4;
+    background-color: #c9e4de;
     color: #000;
     padding: 10px 20px;
     border: none;
@@ -67,7 +67,7 @@ body {
     font-size: 16px;
   }7
   .contact-container {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -75,16 +75,19 @@ body {
     text-align: center;
     margin: 20px auto;
 }
+.center{
+  text-align: center;
+}
 
 .contact-container h1 {
     font-size: 2rem;
-    color: #333;
+    color: #000;
     margin-bottom: 10px;
 }
 
 .contact-container p {
     font-size: 1rem;
-    color: #555;
+    color:#000;
     margin-bottom: 20px;
 }
 
@@ -106,13 +109,13 @@ body {
 
 .form input:focus, .form textarea:focus {
     outline: none;
-    border-color: #f527a6;
-    box-shadow: 0 0 5px rgba(245, 39, 194, 0.5);
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgb(214, 203, 203);
 }
 
 .submit-button {
-    background-color: #38f527;
-    color: #fff;
+    background-color:#c6def1;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -122,5 +125,38 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #2dbb1e;
+    background-color:  #c6def1;
+}
+*{
+  background-color: #f5eacf;
+}
+.foot {
+  text-align: center;
+ margin-bottom: 46%;
+ background-color:#c6def1;
+ justify-content: space-between;
+ padding: 16px 20px;
+
+}
+.foot p{
+  background-color: #c6def1;
+}
+.foot a{
+  text-decoration: none;
+}
+.projects{
+  display: flex;
+}
+.left{
+  padding: 70px;
+  border: 30px;
+ 
+}
+.right{
+  padding: 70px;
+  border: 30px;
+  
+}
+.my{
+  text-align:center;
 }
