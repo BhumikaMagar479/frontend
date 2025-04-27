@@ -134,7 +134,7 @@ body {
 }
 *{
   background-color: #f5eacf;
-  
+  font-family: sans-serif;
 }
 .foot {
   text-align: center;
@@ -158,22 +158,35 @@ body {
 
 }
 .left img{
-  height: 380px;
-  width: 100%;
- padding: 20px;
+  height: 180px;
+  width: 70%;
+ padding: 5px;
  object-fit: cover;
+ 
 }
 .head{
   text-align: center;
 }
 .my{
   text-align:center;
+  padding: 13px;
+  margin: 100px;
 }
 .me{
   text-align: center;
-  padding: 30%;
-  background-color:#f0deb0; ;
+  padding: 22%;
+  background-color:#f0deb0; 
 }
 h2{
   text-align: center;
+}
+.huba{
+  background-color:#f0deb0 ;
+}
+.left:hover img{
+  scale: 1.1;
+  
+}
+.left{
+  width: 200px;
 }
