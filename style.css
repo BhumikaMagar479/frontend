@@ -6,61 +6,58 @@ body {
 
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color:#c6def1;
     padding: 16px 20px;
-    position: fixed;
+    position:sticky;
     top: 0;
     width: 100%;
 
   }
 
-  .nav-links {
-    display: flex;
-    gap: 15px;
-    position: relative;
-  }
 
-  .nav-links a{
+  .navbar .nav-links   a{
+    
     color: #000;
     text-decoration: none;
     padding: 10px 15px;
     transition: all 0.3s ease;
-    position: relative;
+    background-color:#c6def1; 
   }
 
-  .nav-links a:hover {
-    color:#deb887;
+  .navbar .nav-links  a:hover {
+    color:#69410b;
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
   }
 
+   .navbar .nav-links { 
+   
+    list-style:none;
+    display: flex;
+    background-color: #c6def1;
 
+
+  }
+  
   .tshirt1{
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 400px;
     object-fit: cover;
     border-radius:50% ;
+   
   }
-  .tshirt1{
+  .top{
     display: flex;
-    height: 300px;
-    width: 200px;
-    display: flex ;
-    width: 48vw;
-    float: right;
- 
-    
-
-  }
-  .content{
-    display: inline  ;
-    justify-content: center;
     align-items: center;
-    width: 50vb;
+  }
+
+  
+  .content{
+    padding: 20px;
+  
+   text-align: justify;
+    
 
   }
   .button{
@@ -82,6 +79,7 @@ body {
 }
 .center{
   text-align: center;
+  padding: 70px;
 }
 
 .contact-container h1 {
@@ -169,8 +167,10 @@ body {
 }
 .my{
   text-align:center;
-  padding: 13px;
-  margin: 100px;
+  padding: 5px;
+  margin: 10px;
+  font-family:serif;
+  font-size:40px;
 }
 .me{
   text-align: center;
@@ -179,6 +179,8 @@ body {
 }
 h2{
   text-align: center;
+  font-family: serif;
+  font-size: 30px;
 }
 .huba{
   background-color:#f0deb0 ;
