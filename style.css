@@ -8,12 +8,50 @@ body {
   .navbar {
     background-color:#c6def1;
     padding: 16px 20px;
-    position:sticky;
+   
     top: 0;
     width: 100%;
+    display: flex;
 
   }
+  .logo{
+    background-color:#c6def1;
+    padding: 16px 20px;
+    font-size: 30px;
+    font-family:serif;
 
+  }
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+
+
+  }
+  .hamburger span{
+    height: 3px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 2px;
+    @media (max-width: 650px){
+      .hamburger{
+        display: flex;
+      }
+    }
+
+  }
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    background-color: #c6def1;
+    position:absolute;
+    top: 0px;
+    right: 60px;
+    padding: 15px;
+    border-radius: 8px;
+   
+  }
 
   .navbar .nav-links   a{
     
@@ -78,8 +116,9 @@ body {
     margin: 20px auto;
 }
 .center{
-  text-align: center;
-  padding: 70px;
+  text-align: justify;
+  
+  display:flex;
 }
 
 .contact-container h1 {
@@ -99,6 +138,9 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+
+    padding:60px;
+    
 }
 
 .form input, .form textarea {
@@ -112,7 +154,6 @@ body {
 
 .form input:focus, .form textarea:focus {
     outline: none;
-    border-color: #ffffff;
     box-shadow: 0 0 5px rgb(214, 203, 203);
 }
 
@@ -131,15 +172,15 @@ body {
     background-color:  #c6def1;
 }
 *{
-  background-color: #f5eacf;
+   background-color:#f7ecd0;
   font-family: sans-serif;
 }
 .foot {
   text-align: center;
- margin-bottom: 46%;
+ margin-bottom: 0px;
  background-color:#c6def1;
  justify-content: space-between;
- padding: 16px 20px;
+ padding:  20px;
 
 }
 .foot p{
@@ -175,7 +216,8 @@ body {
 .me{
   text-align: center;
   padding: 22%;
-  background-color:#f0deb0; 
+  background-color: #f0deb0;
+ 
 }
 h2{
   text-align: center;
@@ -191,4 +233,18 @@ h2{
 }
 .left{
   width: 200px;
+}
+.store{
+  text-align: center;
+  
+}
+.loc{
+  padding: 7px;
+  border: 0.1px solid #000;
+}
+.visit{
+  padding: 10px;
+}
+.but{
+  padding: 20px;
 }
