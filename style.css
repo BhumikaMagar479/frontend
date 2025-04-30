@@ -3,7 +3,15 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-
+  *{
+    background-color:#f7ecd0;
+   font-family: sans-serif;
+ }
+ h2{
+  text-align: center;
+  font-family: serif;
+  font-size: 30px;
+}
 
   .navbar {
     background-color:#c6def1;
@@ -106,9 +114,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
   }
-  .contact-container {
-    background-color: #ffffff;
-    border-radius: 10px;
+  .contact-container{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     width: 60%;
@@ -117,9 +123,10 @@ body {
 }
 .center{
   text-align: justify;
-  
+  padding: 50px;
   display:flex;
 }
+
 
 .contact-container h1 {
     font-size: 2rem;
@@ -138,8 +145,7 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
-    padding:60px;
+   
     
 }
 
@@ -171,10 +177,6 @@ body {
 .submit-button:hover {
     background-color:  #c6def1;
 }
-*{
-   background-color:#f7ecd0;
-  font-family: sans-serif;
-}
 .foot {
   text-align: center;
  margin-bottom: 0px;
@@ -196,17 +198,11 @@ body {
   text-align: center;
 
 }
-.left img{
-  height: 180px;
-  width: 70%;
- padding: 5px;
- object-fit: cover;
- 
-}
+
 .head{
   text-align: center;
 }
-.my{
+.my{                                                              
   text-align:center;
   padding: 5px;
   margin: 10px;
@@ -219,13 +215,18 @@ body {
   background-color: #f0deb0;
  
 }
-h2{
-  text-align: center;
-  font-family: serif;
-  font-size: 30px;
-}
 .huba{
   background-color:#f0deb0 ;
+}
+.left img{
+  height: 180px;
+  width: 70%;
+ padding: 5px;
+ object-fit: cover;
+ display: block;
+ transition: .3s;
+ justify-content: space-between;
+ transition: all 3.0s ease;
 }
 .left:hover img{
   scale: 1.1;
@@ -233,6 +234,15 @@ h2{
 }
 .left{
   width: 200px;
+  overflow: hidden;
+ 
+}
+.left:hover{
+  width: 200px;
+  overflow: hidden;
+  cursor: pointer;
+
+  
 }
 .store{
   text-align: center;
@@ -247,4 +257,36 @@ h2{
 }
 .but{
   padding: 20px;
+}
+.card{
+  width: 200px;
+ 
+  overflow: hidden;
+  margin: 5px;
+  border: #000 solid 1.5px;
+  
+}
+.card:hover{
+ overflow: hidden;
+  cursor: pointer;
+
+}
+.service{
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.card img{
+  height: 260px;
+  width: 85%;
+ padding: 10px;
+ object-fit: cover;
+ display: block;
+ justify-content: space-between;
+
+}
+.ser{
+  margin-bottom: 50PX;  
+  padding: 50PX;
 }
