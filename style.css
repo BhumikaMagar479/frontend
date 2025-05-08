@@ -243,31 +243,55 @@ body {
   padding: 20%;
 }
 
-.left img{
-  height: 180px;
-  width: 70%;
- padding: 5px;
- object-fit: cover;
- display: block;
- transition: .3s;
- justify-content: space-between;
- transition: all 3.0s ease;
-}
-.left:hover img{
-  scale: 1.1;
-  
-}
-.left{
-  width: 200px;
-  overflow: hidden;
- 
-}
-.left:hover{
-  width: 200px;
-  overflow: hidden;
-  cursor: pointer;
+.project-container {
 
-  
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.project-card {
+
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  /*transition: background 0.3s ease;*/
+
+}
+.project-card:hover {
+
+  transform: translateY(-20px);
+  background-color: rgb(172, 177, 179);
+
+}
+
+.project-card img {
+
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.project-card h2 {
+
+  color: #0d47a1;
+  margin: 0.5rem 0;
+
+}
+.project-card p {
+
+  font-family: 'Lobster', cursive;
+  color: #555;
+
 }
 .store{
   text-align: center;
