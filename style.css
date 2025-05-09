@@ -253,7 +253,7 @@ body {
 
 }
 
-.project-card {
+.project-card{
 
   background-color: #fff;
   border-radius: 12px;
@@ -273,25 +273,28 @@ body {
 
 .project-card img {
 
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  width:100%;
   object-fit: cover;
   object-position: center;
-
+  
 }
 
-.project-card h2 {
-
-  color: #0d47a1;
+.project-card h3 {
+background-color: #fff;
   margin: 0.5rem 0;
 
 }
 .project-card p {
 
   font-family: 'Lobster', cursive;
-  color: #555;
+background-color: #fff;
 
+}
+.project-card h3:hover{
+  background-color: rgb(172, 177, 179);
+}
+.project-card p:hover{
+  background-color: rgb(172, 177, 179);
 }
 .store{
   text-align: center;
@@ -307,17 +310,35 @@ body {
 .but{
   padding: 20px;
 }
-.card{
+
+.service-container{
+
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.service-card{
   width: 200px;
- 
   overflow: hidden;
   margin: 5px;
   border: #000 solid 1.5px;
-  
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  /*transition: background 0.3s ease;*/
 }
-.card:hover{
+.service-card:hover{
  overflow: hidden;
   cursor: pointer;
+   transform: translateY(-20px);
+    background-color:#c6def1;
+  
 
 }
 .service{
@@ -326,14 +347,25 @@ body {
   justify-content: center;
   text-align: center;
 }
-.card img{
+.service-card img{
   height: 260px;
-  width: 85%;
- padding: 10px;
+  width: 100%;
  object-fit: cover;
  display: block;
  justify-content: space-between;
-
+object-position: center;
+}
+.service-card p{
+  background-color: #fff;
+}
+.service-card h3{
+  background-color: #fff;
+}
+.service-card h3:hover{
+  background-color: #c6def1;
+}
+.service-card p:hover{
+  background-color: #c6def1;
 }
 .ser{
   margin-bottom: 50PX;  
