@@ -80,3 +80,38 @@ service.forEach(service => {
   serviceContainer.appendChild(card);
 }
 );
+const people= [
+  {
+    image: "image/coat.webp",
+    title: "Modern Approach:",
+    description: " A Nepalese fashion brand known for its modern stylish.",
+    
+  },
+  {
+    image: "image/coat.webp",
+    title: "Wide Range of Products:",
+    description: "HUBA offers a diverse range of clothing, including tops, bottoms, and sets, catering to various tastes and styles.",
+    
+  },
+ { 
+  image: "image/coat.webp",
+  title: "Inspiration:",
+  description: "HUBA's name, inspired by the Aramaic word for love reflects its commitment to infusing passion and affection into its designs.",
+ 
+},
+];
+const peopleContainer = document.getElementById("people-container");
+people.forEach(people=> { 
+  const card = document.createElement("div");
+  card.className="people-card";
+
+  card.innerHTML = `
+    <img src="${people.image}" alt="${people.title}">
+   
+    <h3>${people.title}</h3>
+    <p>${people.description}</p>
+  `;
+peopleContainer.appendChild(card);
+}
+);
+ 

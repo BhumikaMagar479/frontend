@@ -371,3 +371,63 @@ object-position: center;
   margin-bottom: 50PX;  
   padding: 50PX;
 }
+.people{
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+    background-color: #fff;
+    align-items: center;
+}
+.people-card img{
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+ object-fit: cover;
+ display: block;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.people-card p{
+  background-color: #faeaea;
+}
+.people-card h3{
+  background-color: #faeaea;
+}
+.people-card h3:hover{
+  background-color: #c6def1;
+}
+.people-card p:hover{
+  background-color: #c6def1;
+}
+.people-container{
+
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.people-card{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  
+  background-color: #faeaea;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
+  transition: transform 0.3s ease;
+
+}
+.people:hover{
+ overflow: hidden;
+  cursor: pointer;
+   transform: translateY(-20px);
+  }
+  .people-say{
+    background-color: #fff;
+  }
+  
