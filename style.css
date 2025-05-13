@@ -402,12 +402,12 @@ object-position: center;
   background-color: #c6def1;
 }
 .people-container{
-
-  padding-top: 2rem;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  background-color: #fff;
 
 }
 .people-card{
@@ -427,7 +427,7 @@ object-position: center;
   cursor: pointer;
    transform: translateY(-20px);
   }
-  .people-say{
+  .people-say h1{
     background-color: #fff;
   }
   
