@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  sans-serif;
+    background-color: #f7ecd0;
+}
+.bmi{
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.bmi h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bmi label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.num-area{
+    margin-bottom: 20px;
+}
+#height, #weight{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#btn{
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(109, 185, 109);
+    color: #020202;
+    border: none;
+    border-radius: 5px;
+}
