@@ -1,30 +1,34 @@
-document.getElementById("bmi-form").addEventListener("submit",
-    function(e)
-    {
-        e.preventDefault();
-    
- const height = document.getElementById("height").value;
-const weight = document.getElementById("weight").value;
-const result = document.getElementById("result")
+document.getElementById("bmi-form").addEventListener("submit", function(e) {
+    // Prevent the form from submitting normally
+    e.preventDefault(); 
 
-if (!height || !weight || height <=0 || weight <=0){
-    result.textContent ="please enter valid height and weight!";
-    return;
-}
-const heightInMeter =height / 100;
-const bmi = (weight /(heightInMeter * heightInMeter)).toFixed(2);
-  
-let category = "";
-if (bmi <18.5){
-    category ="underweight";
-}else if (bmi <24.9){
-    category ="normal weight";
-} else if (bmi < 29.9){
-    category ="overweight";
-} else {
-    category ="obese";
-}
-  result.textContent = `Your BMI is ${bmi.toFixed(2)}.` + result.textContent;
+    const weight = document.getElementById("weight").value;
+    const height = document.getElementById("height").value;
+    const result = document.getElementById("result");
+
+    if (!weight || !height || weight <= 0 || height <= 0) {
+        result.textContent = "Please enter valid positive numbers for weight and height.";
+        return;
+    }
+    const heightInMeters = height / 100; 
+    const bmi = weight / (heightInMeters * heightInMeters).toFixed(2);
+
+    if (bmi < 18.5) {
+        result.textContent += " You are underweight.";
+        result.style.color = "blue";
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        result.textContent += " You have a normal weight.";
+        result.style.color = "green";
+    } else if (bmi >= 25 && bmi < 29.9) {
+        result.textContent += " You are overweight.";
+        result.style.color = "orange";
+    } else {
+        result.textContent += " You are obese.";
+        result.style.color = "red";
+    }
+
+    // Display the result
+    result.textContent = `Your BMI is ${bmi.toFixed(2)}.` + result.textContent;
 
     result.style.transform = "scale(1.1)";
     setTimeout(() => {

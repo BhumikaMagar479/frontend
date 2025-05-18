@@ -19,20 +19,26 @@ type();
 
 const projects = [
   {
-    image: "image/per.jpeg",
-    title: "Animated Navbar",
-    description: "A responsive navigation bar with smooth animation an",
+    image: "image/ss.png",
+    title: "BMI Calculator",
+    description: "A calculator to calculate Body Mass Index.",
+    src: "http://127.0.0.1:5500/frontend/BMI/index.html",
+    
   },
    {
   image: "image/coat.webp",
      title: "HTML CSS",
      description: "A responsive navigation bar with smooth animations an",
+     src: "http://127.0.0.1:5500/frontend/BMI/index.html",
+    
   },
+  
    {
      image: "image/coat.webp",
     title: "Landing space",
+    description: "A responsive navigation bar with smooth animations an",
+    src: "http://127.0.0.1:5500/frontend/BMI/index.html",
     
-     description: "A responsive navigation bar with smooth animations an",
    },
 ];
 const container = document.getElementById("project-container");
@@ -43,6 +49,7 @@ projects.forEach(project => {
     <img src="${project.image}" alt="${project.title}" />
     <h3>${project.title}</h3>
     <p>${project.description}</p>
+    <a href="${project.src}">View Project</a>
   `;
     container.appendChild(card);
 });
@@ -73,9 +80,9 @@ service.forEach(service => {
 
   card.innerHTML = `
     <img src="${service.image}" alt="${service.title}">
-   
-    <h3>${service.title}</h3>
+   <h3>${service.title}</h3>
     <p>${service.description}</p>
+  
   `;
   serviceContainer.appendChild(card);
 }

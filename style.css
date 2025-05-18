@@ -276,6 +276,7 @@ body {
   width:100%;
   object-fit: cover;
   object-position: center;
+  border: #000 solid 0.5px;
   
 }
 
